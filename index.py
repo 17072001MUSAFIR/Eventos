@@ -328,4 +328,4 @@ def part_event_des(id):
     return render_template("part_event_des.html")
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=False,host='0.0.0.0')
