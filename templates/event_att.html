@@ -1,0 +1,29 @@
+{% extends "main_base.html"%}
+{% block content %}
+<head>
+    <style>
+        .button1 {
+  background-color: #06163A;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+    </style>
+</head>
+{% for i in res %}
+<table style="font-weight: bold; font-size: 3vh;">
+    <br>
+    <tr>
+        <td>{{i[1]}}<span style="padding-left: 5vw;"></span></td>
+        <td><a href="user_det/{{i[0]}}">Click here view details</a></td>
+    </tr>
+</table>
+{% endfor %}
+{% endblock %}
