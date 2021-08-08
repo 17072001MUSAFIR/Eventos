@@ -36,8 +36,8 @@ def login():
                 flash("Complete the profile")
                 return render_template("bio.html",a=d)
         else:
-            return render_template("login.html")
-    return render_template("login.html")
+            return render_template("index.html")
+    return render_template("index.html")
         
 
 @app.route('/register', methods=['GET', 'POST'])
